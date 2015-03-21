@@ -1,0 +1,16 @@
+to build:
+
+docker build -t "nigelpickard/my-first-app" .
+
+forward to a port:
+
+docker run -d -p 0.0.0.0:9000:9000 nigelpickard/my-first-app
+
+stop all containers:
+
+docker stop $(docker ps -a -q)
+
+
+commit
+docker commit 4695 nigelpickard/my-first-app:firstsuccessfultest
+
