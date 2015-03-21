@@ -49,5 +49,7 @@ then Docker will default to using the ubuntu:latest image.
  
 e.g. sudo docker run -t -i ubuntu /bin/bash
 
+will run the latest tag.
+
 
 

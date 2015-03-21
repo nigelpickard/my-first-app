@@ -1,6 +1,8 @@
 to build:
 
-docker build -t "nigelpickard/my-first-app" .
+docker build -t --no-cache "nigelpickard/my-first-app" .
+docker build --no-cache=true -t "nigelpickard/my-first-app" .    //build with no use of cache
+
 
 forward to a port:
 
@@ -50,6 +52,11 @@ then Docker will default to using the ubuntu:latest image.
 e.g. sudo docker run -t -i ubuntu /bin/bash
 
 will run the latest tag.
+
+
+
+
+
 
 
 
